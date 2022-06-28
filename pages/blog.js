@@ -33,10 +33,10 @@ const Blog = (props) => {
       >
         {blogs.map((blogitem) => {
           return <div key={blogitem.slug}>
-            <Link href={`/blogpost/${blogitem.slug}`}>
+            <Link href={`/blogpost/${blogitem.slug}`} passHref>
               <h3 className={styles.blogItemh3}>{blogitem.title}</h3></Link>
             <p className={styles.blogItemp}>{blogitem.metadesc.substr(0, 140)}...</p>
-            <Link href={`/blogpost/${blogitem.slug}`}><button className={styles.btn}>Read More</button></Link>
+            <Link href={`/blogpost/${blogitem.slug}` } passHref><button className={styles.btn}>Read More</button></Link>
           </div>
         })}
       </InfiniteScroll>
