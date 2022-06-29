@@ -15,7 +15,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.imagewrap}>
           {/* <Image className={styles.myImg} src="/homeimg.jfif" width={237} height={158}/> */}
-          <Image className={styles.myImg} src="/homeimg.jfif" width={237} height={158} alt="hunting coder" />
+          <Image className={styles.myImg} src="/homeimg.jfif" width={237} height={158} alt="Bloggify" />
         </div>
         <h1 className={styles.title}>
           <span className='dummy'>&lt;Welcome to Bloggify/&gt;</span>
